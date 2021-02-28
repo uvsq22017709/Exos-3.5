@@ -1,0 +1,37 @@
+Class EmployeSalaire {
+	
+	//...
+
+	public double calculSalaire( double salaire, int annee){
+		calcule=salaire*12 + 20*annee;
+		return calcule;
+}
+
+Class VendeurSalaire {
+
+	//...
+
+	public double calculSalaire (double salaire, int annee, double commissionVendeur){
+		calcule=salaire*12 + commissionVendeur*annee;
+		retrun calcule;
+}
+
+//... code source
+
+/* TABemploye est un tableau regroupant les informations sur chaque employée de l'entreprise (en l'ocurrance son année d'ancienneté par le paramètre "ansEmploye") */
+/* TABvendeur est un tableau regroupant les informations sur chaque vendeur de l'entreprise (en l'ocurrance son année d'ancienneté par le paramètre "ansVendeur") */
+
+EmplyeSalaire= new employe;
+double salaireTotal;
+
+for (int i=0; i TABemploye.length; i++)
+{
+	salaireTotal+=calculSalaire(1500, ansEmploye);
+}
+
+for (int i=0; i TABvendeur.length; i++)
+{
+	salaireTotal+=calculSalaire(1500, ansVendeur);
+}
+
+System.out.println(" somme totale des salaires de l’entreprise: " + salaireTotal);

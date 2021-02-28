@@ -1,0 +1,30 @@
+// 1.	Cette classe respecte-t-elle SRP ? Pourquoi ?
+Cette classe ne respecte pas SRP, car elle a 2 méthodes qui font 2 choses différentes (2 responsabilités différentes). //
+
+// 2.	Que se passe-t-il si la méthode de calcul du salaire change ?
+Si la méthode de salaire change, cela n’aura pas d’impacte sur la méthode "afficheCoordonnees", les responsabilités ne sont pas couplées. //
+
+// 3.	Que se passe-t-il si l’affichage est remplacé par le stockage dans un fichier CSV
+Cela n’aura pas d’impacte sur l’autre méthode de la classe (Les responsabilités ne sont pas couplées). //
+
+// 4.	Solution respectant SRP :
+On crée 2 classes distinct qui assureront chacune une des méthodes des deux méthodes de la classe "Employe".
+
+Class EmployeSalaire {
+	
+
+	//…
+
+	Public double calculSalaire() {return /* calcul du salaire */ ; }
+}
+
+Class EmployeCoordonnee {
+	private final String nom ;
+	private final String address;
+
+	//…
+
+	Public double void afficheCoordonnees() {System.out.println (nom + " , " + adresse) ; }
+
+}
+ //
